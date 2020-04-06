@@ -1,15 +1,21 @@
-import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import {inject, TestBed} from '@angular/core/testing';
+import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 
-import { ContactService } from './contact.service';
+import {ContactService} from './contact.service';
 
 describe('ContactsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ HttpClientTestingModule ],
-      providers: [ ContactService ]
+      imports: [HttpClientTestingModule],
+      providers: [ContactService]
     });
   });
+
+  it('should ...', inject(
+    [ContactService], (service: ContactService) => {
+      expect(service).toBeTruthy();
+    })
+  );
 
   describe('getContacts', () => {
 
@@ -20,7 +26,7 @@ describe('ContactsService', () => {
     beforeEach(() => {
       contactService = TestBed.get(ContactService);
       httpTestingController = TestBed.get(HttpTestingController);
-      mockContact = { id: 100, name: 'Erin Dee', email: 'edee@example.com' };
+      mockContact = {id: 100, name: 'Erin Dee', email: 'edee@example.com'};
     });
 
     it('should GET a list of contacts', () => {
