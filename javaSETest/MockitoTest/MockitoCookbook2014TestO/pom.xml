@@ -250,14 +250,14 @@
                             <include>**/*Spec.*</include>
                             <include>**/*Test.*</include>
                         </includes>
-                        <sources>
-                            <fileset>
-                                <directory>${pom.basedir}/src/test/groovy</directory>
-                                <includes>
-                                    <include>**/*.groovy</include>
-                                </includes>
-                            </fileset>
-                        </sources>
+<!--                        <sources>-->
+<!--                            <fileset>-->
+<!--                                <directory>${pom.basedir}/src/test/groovy</directory>-->
+<!--                                <includes>-->
+<!--                                    <include>**/*.groovy</include>-->
+<!--                                </includes>-->
+<!--                            </fileset>-->
+<!--                        </sources>-->
                     </configuration>
                 </plugin>
             </plugins>
