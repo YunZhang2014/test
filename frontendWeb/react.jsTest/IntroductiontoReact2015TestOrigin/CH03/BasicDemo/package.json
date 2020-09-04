@@ -7,7 +7,7 @@
     "babel": "^5.2.15",
     "babelify": "^6.0.2",
     "browserify": "^10.1.0",
-    "react": "^0.13.2",
+    "react": "^16.13.1",
     "watchify": "^3.2.1"
   },
   "devDependencies": {},
