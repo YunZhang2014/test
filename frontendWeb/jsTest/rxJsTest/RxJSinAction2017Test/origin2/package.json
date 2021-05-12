@@ -46,7 +46,7 @@
     "bootstrap": "3.3.7",
     "chai": "^3.5.0",
     "chai-as-promised": "6.0.0",
-    "codemirror": "5.20.2",
+    "codemirror": "5.58.2",
     "connect": "3.5.0",
     "connect-route": "0.1.5",
     "http-proxy-middleware": "0.17.3",
